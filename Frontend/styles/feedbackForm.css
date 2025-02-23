@@ -1,0 +1,108 @@
+/* feedbackForm.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #f9f9f9, #e0e0e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.feedbackContainer {
+  max-width: 500px;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+#feedback-form {
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2facb2 ;
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+input[type="text"], 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #2facb2 c;
+  outline: none;
+}
+
+/* Checkbox Styles */
+.labelad {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#feedback-notify {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.phone {
+  margin-top: 10px;
+}
+
+/* Button */
+button {
+  background: #2facb2 ;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #2facb2 ;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .feedbackContainer {
+      padding: 10px;
+  }
+
+  .header {
+      font-size: 20px;
+  }
+
+  button {
+      font-size: 14px;
+  }
+}
